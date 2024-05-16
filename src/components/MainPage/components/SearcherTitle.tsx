@@ -1,8 +1,8 @@
 const SearcherTitle = () => {
 	return (
-		<div className='w-full'>
-			<h1>SearcherTitle</h1>
-		</div>
+		<h1 className='text-[20pt] font-semibold uppercase text-[white]'>
+			NetNavigator
+		</h1>
 	)
 }
 

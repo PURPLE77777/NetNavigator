@@ -17,6 +17,7 @@
 		"^@providers/(.*)$",
 		"^@constants/(.*)$",
 		"^@services/(.*)$",
+		"^@actions/(.*)$",
 		"^@store/(.*)$",
 		"^@hooks/(.*)$",
 		"^@Types/(.*)$",

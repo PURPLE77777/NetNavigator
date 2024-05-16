@@ -8,8 +8,17 @@ const config: Config = {
 	],
 	theme: {
 		colors: {
-			container: {
-				first: '#161617'
+			dark: {
+				first: '#17171a'
+			},
+			gray: {
+				first: '#232325',
+				second: '#2a2a2c',
+				third: '#5f5f60'
+			},
+			yellow: {
+				first: '#f5c400',
+				second: '#f5c400'
 			}
 		},
 		extend: {}

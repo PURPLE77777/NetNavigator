@@ -2,10 +2,9 @@ import Searcher from './components/Searcher'
 
 const MainPage = () => {
 	return (
-		<main className='flex h-full w-full items-center justify-center bg-container-first'>
+		<div className='flex h-full w-full items-center justify-center'>
 			<Searcher />
-		</main>
+		</div>
 	)
 }
-
 export default MainPage

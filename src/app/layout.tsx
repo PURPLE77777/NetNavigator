@@ -4,6 +4,8 @@ import { PropsWithChildren } from 'react'
 
 import App from '@components/App'
 
+import Layout from '@ui/layout/Layout'
+
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -36,7 +38,9 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 	return (
 		<html lang='en'>
 			<body className={inter.className}>
-				<App>{children}</App>
+				<App>
+					<Layout>{children}</Layout>
+				</App>
 			</body>
 		</html>
 	)
