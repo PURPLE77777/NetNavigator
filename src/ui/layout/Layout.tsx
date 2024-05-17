@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react'
 
 const Layout = ({ children }: PropsWithChildren) => {
-	return <main className='bg-dark-first h-full w-full'>{children}</main>
+	return <div className='h-full w-full bg-gray-forth'>{children}</div>
 }
 
 export default Layout

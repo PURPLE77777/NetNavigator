@@ -14,11 +14,12 @@ const config: Config = {
 			gray: {
 				first: '#232325',
 				second: '#2a2a2c',
-				third: '#5f5f60'
+				third: '#5f5f60',
+				forth: '#161617'
 			},
 			yellow: {
 				first: '#f5c400',
-				second: '#f5c400'
+				second: '#c29b00'
 			}
 		},
 		extend: {}

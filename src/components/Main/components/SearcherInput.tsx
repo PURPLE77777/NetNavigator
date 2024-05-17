@@ -4,7 +4,9 @@ import { useRouter } from 'next/navigation'
 import { useRef } from 'react'
 import { FaSearch } from 'react-icons/fa'
 
-import { getTaxpayerData } from '@actions/getTaxpayerData'
+import { query } from '@constants/constants'
+
+import Button from '@ui/button/Button'
 
 const SearcherInput = () => {
 	const { push } = useRouter()
@@ -12,29 +14,25 @@ const SearcherInput = () => {
 	const inputRef = useRef<HTMLInputElement | null>(null)
 
 	const search = async () => {
-		if (inputRef.current) {
-			console.log('Input value', inputRef.current.value)
-			const data = await getTaxpayerData()
-			console.log('taxpayer data:', data)
+		if (inputRef.current && inputRef.current.value) {
+			push(`/info/${inputRef.current.value}`)
 		}
 	}
 
 	return (
-		<div className='border-gray-second m-1 flex overflow-hidden rounded-xl'>
-			<div className='bg-gray-first flex w-full'>
-				<div className='shrink grow px-2'>
+		<div className='flex rounded-xl bg-gray-second p-1'>
+			<div className='flex w-full rounded-xl bg-gray-first'>
+				<div className='grow px-2'>
 					<input
 						ref={inputRef}
 						placeholder='Укажите ИНН'
+						defaultValue={query}
 						className='h-full w-full bg-[transparent] outline-none'
 					/>
 				</div>
-				<button
-					onClick={search}
-					className='bg-yellow-first hover:bg-yellow-second block rounded-xl p-2 text-[black]'
-				>
+				<Button clickHandler={search}>
 					<FaSearch size={30} />
-				</button>
+				</Button>
 			</div>
 		</div>
 	)
