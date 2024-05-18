@@ -4,8 +4,6 @@ import { useRouter } from 'next/navigation'
 import { useRef } from 'react'
 import { FaSearch } from 'react-icons/fa'
 
-import { query } from '@constants/constants'
-
 import Button from '@ui/button/Button'
 
 const SearcherInput = () => {
@@ -26,7 +24,6 @@ const SearcherInput = () => {
 					<input
 						ref={inputRef}
 						placeholder='Укажите ИНН'
-						defaultValue={query}
 						className='h-full w-full bg-[transparent] outline-none'
 					/>
 				</div>

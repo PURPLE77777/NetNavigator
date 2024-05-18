@@ -2,7 +2,7 @@ import { ResolvingMetadata } from 'next'
 
 import Profile from '@components/Profile/Profile'
 
-import { getTaxpayerData } from '@actions/getTaxpayerData'
+import getTaxpayerData from '@actions/getTaxpayerData'
 
 import { DataType } from '@Types/data.type'
 import { InfoQueryParams } from '@Types/infoQueryParams'
