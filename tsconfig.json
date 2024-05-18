@@ -1,25 +1,25 @@
 {
-  "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+	"compilerOptions": {
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
 		"baseUrl": "./src",
-    "paths": {
-      // "@/*": ["./src/*"]
+		"paths": {
+			// "@/*": ["./src/*"]
 			"@constants/*": ["./constants/*"],
 			"@components/*": ["./components/*"],
 			"@hooks/*": ["./hooks/*"],
@@ -30,9 +30,10 @@
 			"@ui/*": ["./ui/*"],
 			"@utils/*": ["./utils/*"],
 			"@Types/*": ["./types/*"],
-			"@app/*": ["./app/*"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+			"@app/*": ["./app/*"],
+			"@actions/*": ["./actions/*"]
+		}
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+	"exclude": ["node_modules"]
 }

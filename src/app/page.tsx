@@ -1,7 +1,7 @@
-import MainPage from '@components/MainPage/MainPage'
+import Main from '@components/Main/Main'
 
 const AppPage = () => {
-	return <MainPage />
+	return <Main />
 }
 
 export default AppPage
